@@ -3,3 +3,4 @@
 - [OUTSMART competitive scoring](outsmart-scoring.md) — USER and AI scores reward prediction wins; Xavi celebrates only player wins.
 - [OUTSMART Expo previews](outsmart-expo-previews.md) — keep RevenueCat native loading out of Expo Go and web preview; clear Metro cache when preview bundles appear stale.
 - [OUTSMART mobile parity](outsmart-mobile-parity.md) — preserve the website’s approved gameplay wording and behavior; adapt layout for native screens without rewriting product voice.
+- [OUTSMART GitHub sync](outsmart-github-sync.md) — GitHub connectors can write through the API even when shell Git receives no usable credentials.
