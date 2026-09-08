@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "OUTSMART"
+description = "A mobile-first psychological strategy game where you try to beat an adaptive local prediction engine."
+version = "1.0.0"
+id = "artifacts/outsmart"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 20185
+
+[services.development]
+run = "pnpm --filter @workspace/outsmart run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/outsmart", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/outsmart/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "20185"
+BASE_PATH = "/"

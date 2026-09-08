@@ -1,0 +1,24 @@
+kind = "mobile"
+previewPath = "/outsmart-mobile/"
+title = "OUTSMART Mobile"
+description = "Native iOS edition of OUTSMART, a behavioral prediction game with local no-login progress, daily challenges, free worlds, and Apple-compliant PRO subscriptions."
+version = "1.0.0"
+id = "artifacts/outsmart-mobile"
+router = "expo-domain"
+
+[[services]]
+name = "expo"
+ensurePreviewReachable = "/status"
+paths = [ "/outsmart-mobile/" ]
+localPort = 19456
+
+[services.development]
+run = "pnpm --filter @workspace/outsmart-mobile run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/outsmart-mobile", "run", "build" ]
+run = [ "pnpm", "--filter", "@workspace/outsmart-mobile", "run", "serve" ]
+
+[services.env]
+PORT = "19456"
+BASE_PATH = "/outsmart-mobile/"

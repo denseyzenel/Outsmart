@@ -1,0 +1,32 @@
+modules = ["nodejs-24", "postgresql-16"]
+
+[deployment]
+router = "application"
+deploymentTarget = "autoscale"
+
+[deployment.postBuild]
+args = ["pnpm", "store", "prune"]
+env = { "CI" = "true" }
+
+[workflows]
+runButton = "Project"
+
+[agent]
+stack = "PNPM_WORKSPACE"
+expertMode = true
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 20000
+
+[nix]
+channel = "stable-25_05"
+
+[userenv]
+
+[userenv.shared]
+EXPO_PUBLIC_REVENUECAT_IOS_API_KEY = "appl_CTpHDasOQezzMUKOEMfVXeiFErr"
+EXPO_PUBLIC_REVENUECAT_TEST_API_KEY = "test_UtzKbbtbHLWJWtPRkPXWmhPqJON"
+REVENUECAT_APPLE_APP_STORE_APP_ID = "app5953ab6d5e"
+REVENUECAT_PROJECT_ID = "proj3207d8bc"
+REVENUECAT_TEST_STORE_APP_ID = "app6edbc08899"

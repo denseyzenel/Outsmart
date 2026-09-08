@@ -1,0 +1,684 @@
+Build a polished mobile-first app called **OUTSMART**.
+
+## CORE CONCEPT
+
+OUTSMART is an interactive psychological strategy game where an AI learns the player's behavioural patterns through rapid decisions, predicts what the player will do next, and challenges the player to deliberately become unpredictable.
+
+The central hook is:
+
+> **“I have 90 seconds to figure you out.”**
+
+The player's objective is NOT to answer questions correctly.
+
+The objective is to **beat the prediction system**.
+
+The AI observes behavioural signals within the game session, learns patterns, generates predictions, and progressively adapts its strategy.
+
+The player can see how predictable they are and actively attempt to fool the system.
+
+The experience should feel like:
+
+**Human vs Algorithm.**
+
+Not like a personality test.
+Not like a chatbot.
+Not like a productivity app.
+Not like a generic quiz.
+
+---
+
+# 1. FIRST-TIME EXPERIENCE
+
+The first screen should be extremely minimal.
+
+Large text:
+
+**OUTSMART**
+
+Below:
+
+**“Give me 90 seconds. I'll try to figure you out.”**
+
+Primary button:
+
+**START**
+
+Do not explain the entire game.
+
+Create curiosity.
+
+When the player taps START, immediately begin the first challenge.
+
+No account creation should be required before playing.
+
+---
+
+# 2. THE FIRST 90 SECONDS
+
+The player receives approximately 15–25 rapid decisions.
+
+Examples:
+
+### Decision 1
+
+**TAKE $50 NOW**
+
+or
+
+**50% CHANCE OF $150**
+
+### Decision 2
+
+**TRUST**
+
+or
+
+**DOUBT**
+
+### Decision 3
+
+Two visually similar options.
+
+**A**
+
+or
+
+**B**
+
+### Decision 4
+
+**SAFE**
+
+or
+
+**RISK**
+
+### Decision 5
+
+Show a short sequence and ask:
+
+**WHICH COMES NEXT?**
+
+### Decision 6
+
+Present two imperfect choices.
+
+The choices should not always have an objectively correct answer.
+
+The purpose is to observe behavioural tendencies.
+
+Record signals such as:
+
+* choice
+* response time
+* hesitation
+* switching behaviour
+* consistency
+* risk preference
+* reaction to uncertainty
+* preference for extremes
+* pattern exploitation
+* behaviour after previous predictions
+
+Do not make the experience feel like a psychological assessment.
+
+It should feel like a game.
+
+---
+
+# 3. THE FIRST PREDICTION
+
+After enough interactions, interrupt the normal flow.
+
+Display:
+
+**I THINK I KNOW YOU.**
+
+Then:
+
+**My prediction:**
+
+> “You will choose LEFT.”
+
+Show a countdown:
+
+**3... 2... 1...**
+
+The player chooses.
+
+Reveal whether the AI was correct.
+
+If correct:
+
+**I KNEW IT.**
+
+If incorrect:
+
+**You fooled me.**
+
+Immediately show:
+
+**AI ACCURACY: 68%**
+
+and continue.
+
+---
+
+# 4. THE CORE GAME LOOP
+
+The game should continuously alternate between:
+
+1. Challenge
+2. Player decision
+3. Behaviour analysis
+4. AI prediction
+5. Player attempts to beat prediction
+6. Prediction result
+7. Difficulty adaptation
+
+The AI should become increasingly difficult to fool.
+
+The player should gradually realise:
+
+> “It's actually learning how I play.”
+
+That should create the main psychological tension.
+
+---
+
+# 5. MAKE THE AI ADAPTIVE
+
+Do NOT use a static personality score.
+
+The prediction engine should maintain a session-level behavioural profile.
+
+Possible features:
+
+* risk tolerance
+* consistency
+* impulsiveness
+* hesitation
+* preference for novelty
+* tendency to reverse decisions
+* tendency to follow patterns
+* tendency to avoid patterns
+* response to previous outcomes
+* confidence calibration
+* exploitation of perceived game mechanics
+
+The model should continuously update after each decision.
+
+The AI should sometimes intentionally make lower-confidence predictions so the experience does not feel fake or repetitive.
+
+Display prediction confidence:
+
+**AI CONFIDENCE**
+
+72%
+
+or
+
+41%
+
+This makes the system feel transparent rather than magically omniscient.
+
+---
+
+# 6. THE PLAYER CAN FIGHT BACK
+
+Introduce a special mode:
+
+## OUTSMART THE AI
+
+The player receives a prediction:
+
+> “You will choose A.”
+
+The player knows the AI expects A.
+
+Now the player can deliberately choose B.
+
+But the AI should anticipate this possibility.
+
+This creates a second-order prediction problem:
+
+**Will the player do what the AI expects them to do, or intentionally behave unpredictably?**
+
+The game should gradually introduce this concept.
+
+For example:
+
+AI:
+
+> “You're going to choose B because you know I expect A.”
+
+Player:
+
+**A**
+
+Result:
+
+**YOU GOT ME.**
+
+This should become one of the most satisfying moments in the game.
+
+---
+
+# 7. PREDICTABILITY SCORE
+
+At the end of a session, generate a score.
+
+Example:
+
+**YOUR PREDICTABILITY**
+
+**37%**
+
+Then:
+
+**You were hardest to predict when:**
+
+* decisions were ambiguous
+* the outcome was uncertain
+* the AI became overconfident
+
+**You were easiest to predict when:**
+
+* risk was involved
+* two choices looked similar
+* you had already established a pattern
+
+Do not present this as a scientifically validated psychological diagnosis.
+
+It is a **game score**, not a clinical/personality assessment.
+
+---
+
+# 8. PLAYER LEVEL
+
+Create progression.
+
+Example:
+
+**LEVEL 01**
+UNKNOWN
+
+Then:
+
+**LEVEL 02**
+OBSERVED
+
+**LEVEL 03**
+PREDICTABLE
+
+**LEVEL 04**
+UNSTABLE
+
+**LEVEL 05**
+UNREADABLE
+
+**LEVEL 06**
+CHAOTIC
+
+**LEVEL 07**
+AI BREAKER
+
+The exact naming can be refined.
+
+Progression should depend on the player's ability to defeat increasingly sophisticated prediction strategies.
+
+---
+
+# 9. DAILY CHALLENGE
+
+Create a daily mode.
+
+Example:
+
+## TODAY'S CHALLENGE
+
+**Can you fool the algorithm 5 times in a row?**
+
+The challenge should take less than 2 minutes.
+
+Show:
+
+**TODAY**
+0 / 5
+
+After completion:
+
+**YOU BROKE THE MODEL.**
+
+Give the player a streak.
+
+---
+
+# 10. SPECIAL CHALLENGES
+
+Create rotating challenge types.
+
+Examples:
+
+### THE GAMBLER
+
+The AI tries to predict your risk tolerance.
+
+### THE PATTERN
+
+The AI learns how you detect patterns.
+
+### THE REVERSAL
+
+The AI predicts whether you'll intentionally reverse your previous behaviour.
+
+### THE TRAP
+
+The AI tries to manipulate your expectations.
+
+### THE BLUFF
+
+The player attempts to make the AI believe they have a particular strategy.
+
+### CHAOS
+
+The player has to become as unpredictable as possible.
+
+### PERFECT PREDICTION
+
+The AI attempts to predict 5 consecutive decisions.
+
+This keeps the game from becoming repetitive.
+
+---
+
+# 11. VISUAL DESIGN
+
+The UI should feel premium, intelligent, mysterious and slightly futuristic.
+
+Avoid:
+
+* childish gamification
+* cartoon graphics
+* excessive gradients
+* generic AI robot imagery
+* clutter
+* unnecessary menus
+
+Use a clean dark interface with strong typography and subtle motion.
+
+The interface should feel closer to:
+
+**high-end strategy game + experimental AI laboratory**
+
+than:
+
+**quiz app + chatbot.**
+
+Animations should be subtle but satisfying.
+
+Prediction moments should feel dramatic.
+
+For example:
+
+**PREDICTION LOCKED**
+
+Then:
+
+**3**
+
+**2**
+
+**1**
+
+Player chooses.
+
+Short pause.
+
+Reveal:
+
+**CORRECT**
+
+or
+
+**WRONG**
+
+---
+
+# 12. HOME SCREEN
+
+The home screen should contain only the important information.
+
+Example:
+
+**OUTSMART**
+
+Your predictability:
+
+**37%**
+
+AI accuracy against you:
+
+**63%**
+
+Current streak:
+
+**4**
+
+Buttons:
+
+**PLAY**
+
+**DAILY CHALLENGE**
+
+**YOUR DATA**
+
+Do not overload the dashboard.
+
+---
+
+# 13. PRIVACY
+
+Privacy must be extremely clear.
+
+The product should NOT secretly collect unrelated personal data.
+
+The prediction system should primarily use behavioural data generated inside the game.
+
+Prefer on-device/session-level processing wherever technically practical.
+
+Provide a simple:
+
+**WHAT WE LEARNED**
+
+screen showing the behavioural signals used by the game.
+
+Example:
+
+> “We observed how quickly you make decisions and how often you change your choice.”
+
+Allow the user to reset their behavioural model.
+
+Do not claim that the app can genuinely determine deep psychological traits.
+
+---
+
+# 14. RETENTION
+
+Do not rely on notifications saying:
+
+“Come back and improve yourself.”
+
+Instead create curiosity.
+
+Examples:
+
+**Yesterday you fooled the AI 4 times. Can you beat 6?**
+
+**The AI is getting better.**
+
+**Your prediction profile changed.**
+
+**You have one weakness the AI keeps exploiting.**
+
+**New challenge unlocked.**
+
+Retention should come from the desire to defeat the system.
+
+---
+
+# 15. MONETISATION
+
+The basic experience should be playable for free.
+
+Potential premium features:
+
+* advanced challenge modes
+* deeper behavioural analytics
+* custom prediction battles
+* historical performance
+* advanced AI difficulty
+* unlimited challenge generation
+* special game modes
+
+Do NOT make the basic experience frustrating purely to force payment.
+
+The free version must be genuinely fun.
+
+---
+
+# 16. VIRAL MECHANIC
+
+Sharing should be optional.
+
+Generate visually attractive result cards such as:
+
+**I PLAYED OUTSMART**
+
+AI accuracy against me:
+
+**81%**
+
+My predictability:
+
+**19%**
+
+**I BROKE THE MODEL 7 TIMES.**
+
+Add a simple share button.
+
+Do not require friends or social connections to use the app.
+
+The product must work perfectly as a solo experience.
+
+---
+
+# 17. IMPORTANT PRODUCT PRINCIPLE
+
+The app should NEVER feel like:
+
+“Answer 20 questions and we'll tell you your personality.”
+
+It should feel like:
+
+> **“There is an intelligence trying to understand how I behave, and I'm trying to beat it.”**
+
+That psychological tension is the product.
+
+The player should constantly think:
+
+**“It thinks I'm going to do this...”**
+
+**“What if I do the opposite?”**
+
+**“Wait... it predicted that I would do the opposite.”**
+
+**“Okay. Now I need to beat it.”**
+
+That loop should be the heart of the entire application.
+
+---
+
+# 18. TECHNICAL ARCHITECTURE
+
+Design the application so the prediction engine is modular.
+
+Components:
+
+* mobile UI
+* game/session manager
+* challenge generator
+* behavioural feature extractor
+* prediction engine
+* adaptive difficulty engine
+* scoring engine
+* progression system
+* local player profile
+* analytics
+* optional backend
+
+The prediction engine should initially use a simple interpretable approach rather than pretending to have an advanced AGI.
+
+Start with:
+
+* Bayesian probability
+* frequency patterns
+* weighted behavioural features
+* reinforcement/adaptive scoring
+
+Then allow more sophisticated models to be introduced later.
+
+The system should be measurable and testable.
+
+---
+
+# 19. MVP
+
+Build the smallest version that proves the concept.
+
+MVP requirements:
+
+1. Landing screen
+2. Start game
+3. 15–20 rapid decisions
+4. Behaviour tracking
+5. AI predictions
+6. Prediction accuracy
+7. Player predictability score
+8. One adaptive difficulty mechanism
+9. End-of-session results
+10. Daily challenge
+11. Local progress
+12. Replay
+
+Do NOT build a huge social system.
+
+Do NOT build messaging.
+
+Do NOT build profiles.
+
+Do NOT build a chatbot.
+
+Do NOT build unnecessary features.
+
+The MVP should prove one thing:
+
+> **Is trying to outsmart the prediction engine genuinely addictive?**
+
+---
+
+# 20. MOST IMPORTANT REQUIREMENT
+
+The first 30 seconds must be exceptional.
+
+A new user should understand the concept without reading instructions.
+
+They should experience the first prediction as quickly as possible.
+
+The desired emotional progression is:
+
+**Curiosity → Challenge → Surprise → Competition → “I can beat it” → Replay**
+
+Design every screen around that loop.
+
+The final product should feel like a **psychological battle between a human and an adaptive algorithm**, packaged as a highly polished mobile game.

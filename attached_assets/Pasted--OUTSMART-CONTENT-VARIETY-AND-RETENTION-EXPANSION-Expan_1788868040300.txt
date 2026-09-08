@@ -1,0 +1,697 @@
+## OUTSMART: CONTENT, VARIETY AND RETENTION EXPANSION
+
+Expand OUTSMART beyond simple A/B questions.
+
+The application must NEVER feel like a repetitive quiz.
+
+The core principle is:
+
+> **The player should never know what kind of challenge comes next.**
+
+Every session should feel like entering a different situation where the AI is attempting to understand, predict, manipulate, or outsmart the player.
+
+---
+
+# 1. ZERO REPETITION SYSTEM
+
+Build a sophisticated content-generation and tracking system.
+
+Questions, scenarios, visual puzzles, decisions and narrative situations must NOT repeat unnecessarily.
+
+Track:
+
+* previously shown questions
+* previously shown scenarios
+* question type
+* difficulty
+* player's previous answer
+* player's previous response time
+* challenge frequency
+* scenario category
+* recently used concepts
+* player performance
+* player familiarity with specific mechanics
+
+Do not simply randomise questions.
+
+Use intelligent content selection.
+
+If the player has recently experienced several risk-based decisions, deliberately switch to another mechanic.
+
+If the player has already solved a particular scenario, generate a genuinely different variation rather than changing only names or numbers.
+
+Avoid superficial variations such as:
+
+“Would you choose $50 or $100?”
+
+followed later by:
+
+“Would you choose $40 or $120?”
+
+These should be treated as essentially the same challenge.
+
+The system should identify conceptual duplicates.
+
+---
+
+# 2. MULTIPLE WORLDS OF OUTSMART
+
+Create different challenge universes.
+
+The player should be able to enter different modes without leaving the core OUTSMART experience.
+
+## WORLD 01: HUMAN
+
+Real-world psychological decisions.
+
+Examples:
+
+* risk
+* trust
+* uncertainty
+* negotiation
+* strategy
+* social judgement
+* probability
+* deception
+* resource allocation
+
+---
+
+# 3. WORLD 02: DETECTIVE
+
+Turn the player into an investigator.
+
+Example:
+
+## CASE FILE 047
+
+A person disappeared at 21:40.
+
+You receive:
+
+* CCTV information
+* witness statements
+* timestamps
+* messages
+* photographs
+* financial transactions
+* conflicting evidence
+
+The player must decide:
+
+**Who is lying?**
+
+But here's the twist:
+
+The AI is observing how the player investigates.
+
+It learns:
+
+* what evidence they prioritise
+* whether they trust people or physical evidence
+* whether they follow intuition
+* whether they form early theories
+* whether they change their theory
+* whether they overlook contradictory evidence
+
+At the end:
+
+**THE AI PREDICTED YOUR SUSPECT BEFORE YOU DID.**
+
+Create procedurally generated cases so the same mystery does not repeat.
+
+---
+
+# 4. WORLD 03: SCI-FI
+
+Create immersive futuristic scenarios.
+
+Examples:
+
+### THE LAST SHIP
+
+Earth has become uninhabitable.
+
+You control the final evacuation ship.
+
+You have limited:
+
+* oxygen
+* food
+* energy
+* seats
+* information
+
+Every decision changes what happens later.
+
+The AI learns your strategic behaviour.
+
+---
+
+### FIRST CONTACT
+
+An unknown extraterrestrial civilisation sends a sequence of signals.
+
+You must decide:
+
+**RESPOND**
+
+**WAIT**
+
+**DECODE**
+
+**IGNORE**
+
+The AI tracks your behaviour and adapts the scenario.
+
+---
+
+### THE LOOP
+
+You are trapped in a repeating 12-minute timeline.
+
+Every loop gives you additional information.
+
+Your goal is to discover what causes the reset.
+
+The AI changes variables based on your previous behaviour.
+
+---
+
+### AI OVERRIDE
+
+An AI-controlled space station begins making decisions you don't understand.
+
+You must determine:
+
+**Is the AI malfunctioning?**
+
+**Is it protecting humanity?**
+
+**Is it manipulating you?**
+
+The player must investigate rather than simply answer questions.
+
+---
+
+# 5. WORLD 04: CRIME / INVESTIGATION
+
+Create fictional investigations involving:
+
+* missing objects
+* suspicious transactions
+* cyber mysteries
+* locked-room mysteries
+* corporate espionage
+* disappearing evidence
+* false identities
+* conflicting witness accounts
+
+The player should receive evidence progressively.
+
+Do NOT reveal the answer immediately.
+
+Make the player build a theory.
+
+Then allow the AI to challenge it:
+
+> **“You're assuming the witness is telling the truth.”**
+
+The player can defend the theory.
+
+The AI responds with another piece of evidence.
+
+This creates an adversarial investigation.
+
+---
+
+# 6. WORLD 05: SURVIVAL
+
+Put the player into high-pressure situations.
+
+Examples:
+
+* stranded on an island
+* underground bunker
+* spacecraft failure
+* extreme weather
+* collapsing infrastructure
+* limited food
+* limited oxygen
+* unknown threat
+
+The player receives incomplete information.
+
+The challenge isn't simply choosing the “correct” answer.
+
+The AI should adapt to the player's strategy.
+
+---
+
+# 7. WORLD 06: FUTURE SOCIETY
+
+Let the player control a futuristic society.
+
+Variables could include:
+
+* technology
+* energy
+* population
+* economy
+* security
+* freedom
+* education
+* automation
+* AI governance
+
+The player makes decisions.
+
+The world evolves.
+
+Unexpected consequences appear.
+
+The player eventually realises:
+
+> **The system has learned how I govern.**
+
+Different players should produce radically different societies.
+
+---
+
+# 8. WORLD 07: THE UNKNOWN
+
+Give the player unexplained phenomena.
+
+Example:
+
+**OBJECT 17**
+
+Nobody knows what it does.
+
+The player can perform experiments.
+
+Possible actions:
+
+* touch
+* move
+* isolate
+* expose to light
+* expose to sound
+* combine with another object
+* observe
+* destroy
+
+The underlying rules are hidden.
+
+The player must discover them.
+
+The AI should adapt the experiment environment.
+
+---
+
+# 9. WORLD 08: DECEPTION
+
+Create situations where the player must identify:
+
+* lies
+* misleading information
+* manipulated evidence
+* unreliable witnesses
+* false patterns
+* strategic deception
+
+However, do NOT make every challenge simply:
+
+**“Which person is lying?”**
+
+Use different mechanics.
+
+For example:
+
+The player receives three pieces of information.
+
+One is deliberately misleading.
+
+The player must determine which information should NOT influence their decision.
+
+---
+
+# 10. WORLD 09: STRATEGY
+
+Create short strategic scenarios.
+
+Examples:
+
+* negotiate a deal
+* allocate limited resources
+* manage a crisis
+* choose a business strategy
+* escape an adversary
+* protect a valuable asset
+* plan several moves ahead
+
+The AI should simulate consequences.
+
+The player should never know whether the obvious choice is optimal.
+
+---
+
+# 11. WORLD 10: THE AI HUNTS YOU
+
+This becomes a premium mode.
+
+The AI has one objective:
+
+> **Predict the player before the player predicts the AI.**
+
+The AI observes previous behaviour and actively creates traps based on it.
+
+Example:
+
+If the player repeatedly chooses the unexpected option:
+
+> **The AI begins expecting you to be unpredictable.**
+
+If the player starts changing strategies:
+
+> **The AI detects the strategy change.**
+
+The player must continually evolve.
+
+This creates an evolving arms race:
+
+**Human → AI → Human → AI**
+
+---
+
+# 12. NARRATIVE BRANCHING
+
+Some scenarios should have persistent consequences.
+
+For example:
+
+You make a decision in Chapter 1.
+
+That decision changes Chapter 2.
+
+A character may disappear.
+
+A resource may become unavailable.
+
+A piece of evidence may be different.
+
+A future event may happen differently.
+
+Do not simply reset the story after every decision.
+
+Create branching scenario trees.
+
+---
+
+# 13. CROSS-MODE SURPRISES
+
+Occasionally combine mechanics.
+
+Example:
+
+A detective case suddenly becomes a survival scenario.
+
+A sci-fi investigation suddenly requires resource management.
+
+A strategy scenario introduces a deception mechanic.
+
+A normal decision suddenly reveals:
+
+> **THE AI WAS TESTING YOU.**
+
+This prevents users from predicting the app itself.
+
+---
+
+# 14. AI PERSONALITY
+
+The AI should have an evolving personality.
+
+Not a generic chatbot personality.
+
+Its personality should emerge through gameplay.
+
+Examples:
+
+**THE OBSERVER**
+
+**THE MANIPULATOR**
+
+**THE STRATEGIST**
+
+**THE TRICKSTER**
+
+**THE ANALYST**
+
+**THE HUNTER**
+
+Each AI opponent should use different prediction strategies.
+
+The player should eventually encounter:
+
+> **“You haven't beaten this AI before.”**
+
+---
+
+# 15. PLAYER MEMORY
+
+The game should remember gameplay patterns where appropriate.
+
+For example:
+
+> “You always investigate before acting.”
+
+> “You become more aggressive after losing.”
+
+> “You rarely choose the middle option.”
+
+> “You deliberately changed your strategy.”
+
+But these observations should be presented as gameplay insights, NOT medical or psychological diagnoses.
+
+Allow the player to reset their game profile.
+
+---
+
+# 16. DISCOVERY SYSTEM
+
+Create hidden achievements that players discover naturally.
+
+Examples:
+
+**AI BREAKER**
+
+Beat an AI prediction 10 times.
+
+**UNREADABLE**
+
+Maintain very low predictability.
+
+**FALSE PATTERN**
+
+Successfully exploit a pattern the AI thought it detected.
+
+**DOUBLE BLUFF**
+
+Successfully predict that the AI will predict your prediction.
+
+**CHAOS**
+
+Become extremely difficult to predict.
+
+**CASE CLOSED**
+
+Solve a detective case without using a hint.
+
+Do not reveal every achievement beforehand.
+
+Some should remain mysterious.
+
+---
+
+# 17. SURPRISE EVENTS
+
+Rarely trigger unexpected events.
+
+Examples:
+
+> **WAIT.**
+
+> Something changed.
+
+Or:
+
+> **The AI has updated its strategy.**
+
+Or:
+
+> **You have triggered an unknown scenario.**
+
+Or:
+
+> **The rules have changed.**
+
+These events should be rare enough to remain exciting.
+
+Do not overuse them.
+
+---
+
+# 18. CONTENT ENGINE
+
+Build the content architecture so new scenarios can continuously be added.
+
+Each challenge should contain:
+
+* unique ID
+* category
+* mechanics
+* difficulty
+* estimated duration
+* required assets
+* decision points
+* possible outcomes
+* behavioural signals measured
+* AI strategy
+* branching rules
+* novelty score
+* similarity score against previous challenges
+
+Before showing a generated challenge, check it against the player's history to avoid conceptual repetition.
+
+---
+
+# 19. SESSION STRUCTURE
+
+A session should not consist of 20 identical questions.
+
+Example:
+
+**Challenge 1:** rapid decision
+
+**Challenge 2:** visual pattern
+
+**Challenge 3:** strategic choice
+
+**Challenge 4:** short detective clue
+
+**Challenge 5:** AI prediction
+
+**Challenge 6:** sci-fi decision
+
+**Challenge 7:** deception challenge
+
+**Challenge 8:** AI counter-prediction
+
+**Challenge 9:** mini investigation
+
+**Challenge 10:** final prediction battle
+
+The exact sequence should change.
+
+The player should never know what comes next.
+
+---
+
+# 20. THE GOLDEN RULE
+
+OUTSMART should constantly create the feeling:
+
+> **“I wonder what happens if I choose differently.”**
+
+and:
+
+> **“Wait... the AI noticed that.”**
+
+and:
+
+> **“Okay, now I know what it's doing.”**
+
+followed by:
+
+> **“Oh shit. It predicted that too.”**
+
+The user should feel that they are participating in an evolving battle rather than consuming generated content.
+
+---
+
+# 21. DOWNLOAD-WORTHY FIRST EXPERIENCE
+
+The first session must contain at least one unforgettable moment.
+
+Do not wait until the user has completed 20 questions.
+
+Within the first few minutes, create a moment where the AI makes a surprisingly accurate prediction.
+
+Then immediately introduce the possibility of beating it.
+
+Example:
+
+**AI PREDICTION**
+
+> “You're going to choose B.”
+
+Player chooses B.
+
+**CORRECT.**
+
+Then:
+
+> **“Again.”**
+
+The player deliberately chooses A.
+
+AI:
+
+> **“You expected me to predict B.”**
+
+Pause.
+
+> **“So you chose A.”**
+
+Then:
+
+**CORRECT.**
+
+This is the moment that sells the entire product.
+
+The user should think:
+
+> **“WHAT? I need to play again.”**
+
+---
+
+# 22. PRODUCT PHILOSOPHY
+
+Do not build OUTSMART as a collection of quizzes.
+
+Build it as a **dynamic playground for human intelligence**.
+
+The user should be able to:
+
+* investigate
+* experiment
+* strategise
+* deceive
+* predict
+* reverse-engineer
+* survive
+* solve mysteries
+* manipulate systems
+* challenge AI
+* discover hidden rules
+* create unexpected outcomes
+
+The common thread is always:
+
+**THE AI IS LEARNING YOU.**
+
+And your ultimate objective is:
+
+**OUTSMART IT.**

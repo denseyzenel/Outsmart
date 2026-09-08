@@ -1,0 +1,28 @@
+{
+  "expo": {
+    "name": "OUTSMART",
+    "slug": "outsmart-mobile",
+    "version": "1.0.2",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "outsmart",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.denseyzenelmaben.outsmart",
+      "buildNumber": "3"
+    },
+    "android": {
+      "package": "com.denseyzenelmaben.outsmart",
+      "versionCode": 3
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": ["expo-router"],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}

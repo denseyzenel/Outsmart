@@ -1,0 +1,150 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: API specification
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: billing
+    description: OUTSMART PRO entitlement and checkout operations
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      description: Returns server health status
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+  /billing/status:
+    post:
+      operationId: getBillingStatus
+      tags: [billing]
+      summary: Get the device's current access level
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BillingStatusInput"
+      responses:
+        "200":
+          description: Current entitlement
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BillingStatus"
+  /billing/checkout:
+    post:
+      operationId: createBillingCheckout
+      tags: [billing]
+      summary: Create a Stripe Checkout session for OUTSMART PRO
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BillingCheckoutInput"
+      responses:
+        "200":
+          description: Checkout redirect
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BillingRedirect"
+  /billing/portal:
+    post:
+      operationId: createBillingPortal
+      tags: [billing]
+      summary: Create a Stripe customer portal session
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/BillingDeviceInput"
+      responses:
+        "200":
+          description: Portal redirect
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/BillingRedirect"
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+    BillingDeviceInput:
+      type: object
+      required: [deviceId]
+      properties:
+        deviceId:
+          type: string
+          minLength: 20
+          maxLength: 100
+    BillingStatusInput:
+      type: object
+      required: [deviceId, onboardingComplete]
+      properties:
+        deviceId:
+          type: string
+          minLength: 20
+          maxLength: 100
+        onboardingComplete:
+          type: boolean
+    BillingCheckoutInput:
+      type: object
+      required: [deviceId, plan]
+      properties:
+        deviceId:
+          type: string
+          minLength: 20
+          maxLength: 100
+        plan:
+          type: string
+          enum: [monthly, annual]
+    BillingStatus:
+      type: object
+      required: [access, isPro, trialDaysRemaining, trialEndsAt, monthlyPrice, annualPrice, annualSavingPercent, canManage]
+      properties:
+        access:
+          type: string
+          enum: [free, trial, pro]
+        isPro:
+          type: boolean
+        trialDaysRemaining:
+          type: integer
+        trialEndsAt:
+          type: ["string", "null"]
+          format: date-time
+        monthlyPrice:
+          type: string
+        annualPrice:
+          type: string
+        annualSavingPercent:
+          type: integer
+        canManage:
+          type: boolean
+    BillingRedirect:
+      type: object
+      required: [url]
+      properties:
+        url:
+          type: string
+          format: uri
+
